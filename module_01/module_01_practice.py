@@ -1,4 +1,4 @@
-#!/usr/bin/env python5
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # Filename: module_1_practice.py
@@ -24,6 +24,7 @@ print("A week has %d days and these are: %s" % (num_days, all_days))
 
 
 # Errors
+# ln 1: python5 -> python3  (after review)
 # ln 2: utf-X -> utf-8
 # ln 10: not commented
 # ln 12: missing double quote after 'Fri'
