@@ -21,7 +21,7 @@ write_file.write("THIS IS A TEXT LINE!\n")
 write_file.close()
 
 # TODO-1: Initialize the access_mode for processing the file appropriately!
-access_mode = '???'
+access_mode = 'r+'
 
 truncate_file = open(test_file_name, access_mode)
 
@@ -35,7 +35,7 @@ else:
                        "before truncate should happen...")
 
 # TODO-2: Truncate the file...
-
+truncate_file.truncate(0)
 
 # Check file after truncate:
 read_file = open(test_file_name, 'r')
