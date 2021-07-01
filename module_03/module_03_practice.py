@@ -24,6 +24,7 @@ write_file.close()
 access_mode = 'r+'
 
 truncate_file = open(test_file_name, access_mode)
+print(type(truncate_file))
 
 file_len = len(truncate_file.read())
 
@@ -35,7 +36,9 @@ else:
                        "before truncate should happen...")
 
 # TODO-2: Truncate the file...
-truncate_file.truncate(0)
+truncate_file.seek(0)       # set stream position to 0
+truncate_file.truncate()    # or just use truncate(0)
+truncate_file.close()
 
 # Check file after truncate:
 read_file = open(test_file_name, 'r')
