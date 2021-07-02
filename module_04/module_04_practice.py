@@ -21,7 +21,6 @@ num2 = 56.845345456
 result = add_numbers(num1, num2)
 
 print("Calculation: %r + %r = %r" % (num1, num2, result))
-print_something()
 
 
 # Errors
